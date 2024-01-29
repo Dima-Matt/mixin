@@ -1,0 +1,29 @@
+@import url(./mixin/_mixin.scss);
+
+p {
+    @include adaptive-font (40, 10)
+    
+}
+
+
+// 1280 - 40px
+// 720px - 30px
+// 420 - 20px
+
+// @media screen and (max-width: 1279px) and (min-width: 720px) {
+//     p {
+//         font-size: 30px;
+//     }
+// }
+
+// @media screen and (max-width: 719px) and (min-width: 420px) {
+//     p {
+//         font-size: 20px;
+//     }
+// }
+
+// @media screen and (max-width: 419px) {
+//     p {
+//         font-size: 10px;
+//     }
+// }

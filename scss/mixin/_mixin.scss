@@ -1,0 +1,10 @@
+@mixin adaptive-font ($pcWidth, $mobWidth) {
+
+    $addWidth: $pcWidth - $mobWidth;
+    $maxWidth : 1280 - 420;
+    font-size: calc(#{$mobWidth + px} + #{$addWidth} * ((100vw - 420) / #{$maxWidth}));
+
+    color: red;
+
+}
+
